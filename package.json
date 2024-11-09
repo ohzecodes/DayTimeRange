@@ -1,16 +1,16 @@
 {
   "name": "daytimerange",
-
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+"access": "public",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup index.ts --format cjs, esm --dts",
     "lint": "tsc",
-    "release": "changeset version && changeset publish"
+    "release": "changeset version && changeset publish --access public"
   },
   "keywords": [],
   "repository": {
@@ -21,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3","@changesets/cli": "^2.27.9"
+    "typescript": "^5.6.3",
+    "@changesets/cli": "^2.27.9"
   }
 }
