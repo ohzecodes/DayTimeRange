@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup index.ts --format cjs, esm --dts",
     "lint": "tsc",
-    "release": "changeset version && changeset publish && npm publish --access public"
+    "release": "changeset version && npm publish --access public"
   },
   "keywords": [],
   "repository": {
